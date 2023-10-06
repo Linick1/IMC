@@ -1,6 +1,5 @@
 export function notANumber (value)  {
-  return isNaN(value) || value == ""
-
+  return isNaN(value) || value.trim() == "" || value.includes('e')
 }
 
 export function calculateIMC (weight, height) {
